@@ -1,0 +1,2116 @@
+{
+  "name": "nicks-big-day",
+  "path": "",
+  "type": "directory",
+  "children": [
+    {
+      "name": "assets",
+      "path": "assets",
+      "type": "directory",
+      "children": [
+        {
+          "name": "audio",
+          "path": "assets/audio",
+          "type": "directory",
+          "children": [],
+          "depth": 2,
+          "metadata": {
+            "size": 0,
+            "item_count": 0,
+            "last_modified": null
+          }
+        },
+        {
+          "name": "fonts",
+          "path": "assets/fonts",
+          "type": "directory",
+          "children": [],
+          "depth": 2,
+          "metadata": {
+            "size": 0,
+            "item_count": 0,
+            "last_modified": null
+          }
+        },
+        {
+          "name": "images",
+          "path": "assets/images",
+          "type": "directory",
+          "children": [],
+          "depth": 2,
+          "metadata": {
+            "size": 0,
+            "item_count": 0,
+            "last_modified": null
+          }
+        },
+        {
+          "name": "video",
+          "path": "assets/video",
+          "type": "directory",
+          "children": [],
+          "depth": 2,
+          "metadata": {
+            "size": 0,
+            "item_count": 0,
+            "last_modified": null
+          }
+        }
+      ],
+      "depth": 1,
+      "metadata": {
+        "size": 0,
+        "item_count": 4,
+        "last_modified": null
+      }
+    },
+    {
+      "name": "components",
+      "path": "components",
+      "type": "directory",
+      "children": [],
+      "depth": 1,
+      "metadata": {
+        "size": 0,
+        "item_count": 0,
+        "last_modified": null
+      }
+    },
+    {
+      "name": "css",
+      "path": "css",
+      "type": "directory",
+      "children": [
+        {
+          "name": "main.css",
+          "path": "css/main.css",
+          "type": "file",
+          "extension": "css",
+          "file_type_group": "code",
+          "size": 2807,
+          "modified": 1747690567.0888946,
+          "metadata": {
+            "mime_type": "text/css"
+          },
+          "hash": "77f496831636a183ce93558202c24317"
+        },
+        {
+          "name": "theme.css",
+          "path": "css/theme.css",
+          "type": "file",
+          "extension": "css",
+          "file_type_group": "code",
+          "size": 4838,
+          "modified": 1747689937.8328948,
+          "metadata": {
+            "mime_type": "text/css"
+          },
+          "hash": "0c2dcdb8d41cefd3e11b4ad45347d418"
+        }
+      ],
+      "depth": 1,
+      "metadata": {
+        "size": 7645,
+        "item_count": 2,
+        "last_modified": 1747690567.0888946
+      }
+    },
+    {
+      "name": "data",
+      "path": "data",
+      "type": "directory",
+      "children": [],
+      "depth": 1,
+      "metadata": {
+        "size": 0,
+        "item_count": 0,
+        "last_modified": null
+      }
+    },
+    {
+      "name": "js",
+      "path": "js",
+      "type": "directory",
+      "children": [
+        {
+          "name": "intro-sequence.js",
+          "path": "js/intro-sequence.js",
+          "type": "file",
+          "extension": "js",
+          "file_type_group": "code",
+          "size": 5862,
+          "modified": 1747691718.336172,
+          "metadata": {
+            "mime_type": "text/javascript"
+          },
+          "hash": "10e6d9923d9f44a3b8f6a576038e371c"
+        },
+        {
+          "name": "main.js",
+          "path": "js/main.js",
+          "type": "file",
+          "extension": "js",
+          "file_type_group": "code",
+          "size": 22573,
+          "modified": 1747692866.9641716,
+          "metadata": {
+            "mime_type": "text/javascript"
+          },
+          "hash": "3ac731369662a238fa61bd735b32a458"
+        }
+      ],
+      "depth": 1,
+      "metadata": {
+        "size": 28435,
+        "item_count": 2,
+        "last_modified": 1747692866.9641716
+      }
+    },
+    {
+      "name": "puzzles",
+      "path": "puzzles",
+      "type": "directory",
+      "children": [
+        {
+          "name": "puzzle1",
+          "path": "puzzles/puzzle1",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle1/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 13726,
+              "modified": 1747697149.46817,
+              "metadata": {
+                "mime_type": "text/html"
+              },
+              "hash": "1ce36def6a9de436024e0782ba489390"
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle1/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 31860,
+              "modified": 1747697545.76417,
+              "metadata": {
+                "mime_type": "text/javascript"
+              },
+              "hash": "93d6eba35180f419104963724d28f128"
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle1/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 23419,
+              "modified": 1747697170.00417,
+              "metadata": {
+                "mime_type": "text/css"
+              },
+              "hash": "df1f41c560cda02e58442de2142ec72e"
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 69005,
+            "item_count": 3,
+            "last_modified": 1747697545.76417
+          }
+        },
+        {
+          "name": "puzzle10",
+          "path": "puzzles/puzzle10",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle10/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.648895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle10/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.652895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle10/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.652895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.652895
+          }
+        },
+        {
+          "name": "puzzle11",
+          "path": "puzzles/puzzle11",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle11/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.6608949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle11/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.6648948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle11/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.6608949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.6648948
+          }
+        },
+        {
+          "name": "puzzle12",
+          "path": "puzzles/puzzle12",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle12/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.668895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle12/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.672895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle12/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.672895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.672895
+          }
+        },
+        {
+          "name": "puzzle13",
+          "path": "puzzles/puzzle13",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle13/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.6808949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle13/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.684895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle13/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.684895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.684895
+          }
+        },
+        {
+          "name": "puzzle14",
+          "path": "puzzles/puzzle14",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle14/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.692895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle14/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.696895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle14/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.692895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.696895
+          }
+        },
+        {
+          "name": "puzzle15",
+          "path": "puzzles/puzzle15",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle15/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.704895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle15/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.708895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle15/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.704895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.708895
+          }
+        },
+        {
+          "name": "puzzle16",
+          "path": "puzzles/puzzle16",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle16/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.7168949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle16/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.7208948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle16/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.7168949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.7208948
+          }
+        },
+        {
+          "name": "puzzle17",
+          "path": "puzzles/puzzle17",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle17/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.724895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle17/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.732895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle17/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.728895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.732895
+          }
+        },
+        {
+          "name": "puzzle18",
+          "path": "puzzles/puzzle18",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle18/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.7368948,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle18/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.740895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle18/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.740895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.740895
+          }
+        },
+        {
+          "name": "puzzle19",
+          "path": "puzzles/puzzle19",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle19/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.748895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle19/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.7528949,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle19/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.7528949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.7528949
+          }
+        },
+        {
+          "name": "puzzle2",
+          "path": "puzzles/puzzle2",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle2/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.6048949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle2/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.6088948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle2/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.6048949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 82,
+            "item_count": 3,
+            "last_modified": 1747689687.6088948
+          }
+        },
+        {
+          "name": "puzzle20",
+          "path": "puzzles/puzzle20",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle20/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.760895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle20/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.764895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle20/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.760895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.764895
+          }
+        },
+        {
+          "name": "puzzle21",
+          "path": "puzzles/puzzle21",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle21/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.7728949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle21/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.776895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle21/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.7728949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.776895
+          }
+        },
+        {
+          "name": "puzzle22",
+          "path": "puzzles/puzzle22",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle22/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.780895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle22/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.788895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle22/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.784895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.788895
+          }
+        },
+        {
+          "name": "puzzle23",
+          "path": "puzzles/puzzle23",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle23/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.7928948,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle23/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.800895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle23/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.796895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.800895
+          }
+        },
+        {
+          "name": "puzzle24",
+          "path": "puzzles/puzzle24",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle24/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.804895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle24/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.8128948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle24/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.8088949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.8128948
+          }
+        },
+        {
+          "name": "puzzle25",
+          "path": "puzzles/puzzle25",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle25/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.816895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle25/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.824895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle25/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.820895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.824895
+          }
+        },
+        {
+          "name": "puzzle26",
+          "path": "puzzles/puzzle26",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle26/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.8288949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle26/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.836895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle26/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.832895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.836895
+          }
+        },
+        {
+          "name": "puzzle27",
+          "path": "puzzles/puzzle27",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle27/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.840895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle27/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.8488948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle27/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.844895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.8488948
+          }
+        },
+        {
+          "name": "puzzle28",
+          "path": "puzzles/puzzle28",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle28/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.852895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle28/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.860895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle28/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.856895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.860895
+          }
+        },
+        {
+          "name": "puzzle29",
+          "path": "puzzles/puzzle29",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle29/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.8648949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle29/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.872895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle29/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.8688948,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.872895
+          }
+        },
+        {
+          "name": "puzzle3",
+          "path": "puzzles/puzzle3",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle3/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.6088948,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle3/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.6088948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle3/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.6088948,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 82,
+            "item_count": 3,
+            "last_modified": 1747689687.6088948
+          }
+        },
+        {
+          "name": "puzzle30",
+          "path": "puzzles/puzzle30",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle30/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.880895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle30/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.8848948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle30/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.8848948,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.8848948
+          }
+        },
+        {
+          "name": "puzzle31",
+          "path": "puzzles/puzzle31",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle31/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.892895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle31/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.896895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle31/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.896895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.896895
+          }
+        },
+        {
+          "name": "puzzle32",
+          "path": "puzzles/puzzle32",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle32/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.9048948,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle32/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.912895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle32/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.908895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.912895
+          }
+        },
+        {
+          "name": "puzzle33",
+          "path": "puzzles/puzzle33",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle33/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.916895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle33/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.924895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle33/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.9208949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.924895
+          }
+        },
+        {
+          "name": "puzzle34",
+          "path": "puzzles/puzzle34",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle34/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.928895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle34/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.936895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle34/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.932895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.936895
+          }
+        },
+        {
+          "name": "puzzle35",
+          "path": "puzzles/puzzle35",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle35/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.9408948,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle35/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.948895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle35/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.944895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.948895
+          }
+        },
+        {
+          "name": "puzzle36",
+          "path": "puzzles/puzzle36",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle36/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.952895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle36/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.9608948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle36/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.9568949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.9608948
+          }
+        },
+        {
+          "name": "puzzle37",
+          "path": "puzzles/puzzle37",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle37/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.964895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle37/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.972895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle37/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.968895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.972895
+          }
+        },
+        {
+          "name": "puzzle38",
+          "path": "puzzles/puzzle38",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle38/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 29,
+              "modified": 1747689687.9768949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle38/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.984895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle38/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.980895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 85,
+            "item_count": 3,
+            "last_modified": 1747689687.984895
+          }
+        },
+        {
+          "name": "puzzle4",
+          "path": "puzzles/puzzle4",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle4/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.612895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle4/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.616895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle4/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.612895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 82,
+            "item_count": 3,
+            "last_modified": 1747689687.616895
+          }
+        },
+        {
+          "name": "puzzle5",
+          "path": "puzzles/puzzle5",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle5/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.616895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle5/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.620895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle5/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.616895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 82,
+            "item_count": 3,
+            "last_modified": 1747689687.620895
+          }
+        },
+        {
+          "name": "puzzle6",
+          "path": "puzzles/puzzle6",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle6/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.620895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle6/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.6248949,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle6/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.6248949,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 82,
+            "item_count": 3,
+            "last_modified": 1747689687.6248949
+          }
+        },
+        {
+          "name": "puzzle7",
+          "path": "puzzles/puzzle7",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle7/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.6248949,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle7/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.628895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle7/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.628895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 82,
+            "item_count": 3,
+            "last_modified": 1747689687.628895
+          }
+        },
+        {
+          "name": "puzzle8",
+          "path": "puzzles/puzzle8",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle8/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.632895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle8/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.636895,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle8/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.632895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 82,
+            "item_count": 3,
+            "last_modified": 1747689687.636895
+          }
+        },
+        {
+          "name": "puzzle9",
+          "path": "puzzles/puzzle9",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "path": "puzzles/puzzle9/index.html",
+              "type": "file",
+              "extension": "html",
+              "file_type_group": "code",
+              "size": 28,
+              "modified": 1747689687.640895,
+              "metadata": {
+                "mime_type": "text/html"
+              }
+            },
+            {
+              "name": "script.js",
+              "path": "puzzles/puzzle9/script.js",
+              "type": "file",
+              "extension": "js",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.6448948,
+              "metadata": {
+                "mime_type": "text/javascript"
+              }
+            },
+            {
+              "name": "style.css",
+              "path": "puzzles/puzzle9/style.css",
+              "type": "file",
+              "extension": "css",
+              "file_type_group": "code",
+              "size": 27,
+              "modified": 1747689687.640895,
+              "metadata": {
+                "mime_type": "text/css"
+              }
+            }
+          ],
+          "depth": 2,
+          "metadata": {
+            "size": 82,
+            "item_count": 3,
+            "last_modified": 1747689687.6448948
+          }
+        }
+      ],
+      "depth": 1,
+      "metadata": {
+        "size": 72126,
+        "item_count": 152,
+        "last_modified": null
+      }
+    },
+    {
+      "name": "index.html",
+      "path": "index.html",
+      "type": "file",
+      "extension": "html",
+      "file_type_group": "code",
+      "size": 3377,
+      "modified": 1747690398.3528945,
+      "metadata": {
+        "mime_type": "text/html"
+      },
+      "hash": "7f16b754b4bf7b9ef90fb9f275779171"
+    },
+    {
+      "name": "script.js",
+      "path": "script.js",
+      "type": "file",
+      "extension": "js",
+      "file_type_group": "code",
+      "size": 1456,
+      "modified": 1747691643.968172,
+      "metadata": {
+        "mime_type": "text/javascript"
+      },
+      "hash": "846717220ec5e0c9917cc5d91b2e20ab"
+    },
+    {
+      "name": "smart_tree.py",
+      "path": "smart_tree.py",
+      "type": "file",
+      "extension": "py",
+      "file_type_group": "code",
+      "size": 19968,
+      "modified": 1747393315.383,
+      "metadata": {
+        "mime_type": "text/x-python"
+      },
+      "hash": "8cb417a7d000ad55fa232005b01623bf"
+    },
+    {
+      "name": "style.css",
+      "path": "style.css",
+      "type": "file",
+      "extension": "css",
+      "file_type_group": "code",
+      "size": 8857,
+      "modified": 1747691564.0001721,
+      "metadata": {
+        "mime_type": "text/css"
+      },
+      "hash": "96210fc968209b7db3b29121ac3e3124"
+    }
+  ],
+  "depth": 0,
+  "metadata": {
+    "size": 141864,
+    "item_count": 170,
+    "last_modified": 1747691643.968172
+  },
+  "scan_metadata": {
+    "timestamp": "2025-05-19T16:35:05.572658",
+    "duration_seconds": 0.15075421333312988,
+    "total_files": 122,
+    "total_directories": 48,
+    "total_size_bytes": 141864,
+    "file_type_distribution": {
+      "code": 122
+    }
+  }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 1: Space Station Assembly | Nick's Cosmic Challenge</title>
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <header class="puzzle-header">
+        <div class="container flex-between">
+            <h1 class="puzzle-title">PUZZLE 1: SPACE STATION ASSEMBLY</h1>
+            <div class="puzzle-nav">
+                <button id="hint-btn" class="button button-outline">HINT</button>
+                <button id="home-btn" class="button button-outline">HOME</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="puzzle-container">
+        <div class="puzzle-instructions panel">
+            <p>Assemble the space station by dragging each module to its correct position. Match the connection points to build a fully operational station.</p>
+        </div>
+
+        <div class="puzzle-game panel">
+            <div class="space-environment">
+                <div class="nebula-bg"></div>
+                <div class="stars-distant"></div>
+                <div class="floating-debris"></div>
+            </div>
+            
+            <div id="puzzle-board">
+                <!-- Blueprint grid in background -->
+                <div class="blueprint-grid">
+                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 127, 255, 0.1)" stroke-width="0.5"/>
+                            </pattern>
+                            <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+                                <rect width="100" height="100" fill="url(#smallGrid)"/>
+                                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(0, 127, 255, 0.2)" stroke-width="1"/>
+                            </pattern>
+                            <radialGradient id="station-area" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                <stop offset="0%" stop-color="rgba(0, 127, 255, 0.1)"/>
+                                <stop offset="100%" stop-color="rgba(0, 127, 255, 0)"/>
+                            </radialGradient>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#grid)" />
+                        <circle cx="50%" cy="50%" r="40%" fill="url(#station-area)"/>
+                    </svg>
+                </div>
+                
+                <!-- Target area where pieces need to be placed - COMPLETELY REDESIGNED -->
+                <div id="puzzle-target">
+                    <!-- CORE MODULE in center -->
+                    <div class="module-outline core-outline" data-position="1">
+                        <svg viewBox="0 0 100 100" class="module-svg outline">
+                            <rect x="10" y="10" width="80" height="80" stroke-dasharray="5,5" class="module-shape" rx="5" />
+                            <circle cx="50" cy="10" r="5" class="connector top" />
+                            <circle cx="90" cy="50" r="5" class="connector right" />
+                            <circle cx="50" cy="90" r="5" class="connector bottom" />
+                            <circle cx="10" cy="50" r="5" class="connector left" />
+                            <text x="50" y="55" class="module-label">CORE</text>
+                        </svg>
+                    </div>
+                    
+                    <!-- HABITAT MODULE above CORE -->
+                    <div class="module-outline habitat-outline" data-position="2">
+                        <svg viewBox="0 0 100 100" class="module-svg outline">
+                            <rect x="10" y="25" width="80" height="50" stroke-dasharray="5,5" class="module-shape" rx="5" />
+                            <rect x="30" y="10" width="40" height="15" stroke-dasharray="5,5" class="module-shape" rx="2" />
+                            <rect x="30" y="75" width="40" height="15" stroke-dasharray="5,5" class="module-shape" rx="2" />
+                            <circle cx="50" cy="10" r="5" class="connector top" />
+                            <circle cx="50" cy="90" r="5" class="connector bottom" />
+                            <text x="50" y="55" class="module-label">HABITAT</text>
+                        </svg>
+                    </div>
+                    
+                    <!-- OBSERVATORY to right of CORE -->
+                    <div class="module-outline observatory-outline" data-position="3">
+                        <svg viewBox="0 0 100 100" class="module-svg outline">
+                            <circle cx="50" cy="50" r="40" stroke-dasharray="5,5" class="module-shape" />
+                            <circle cx="10" cy="50" r="5" class="connector left" />
+                            <text x="50" y="55" class="module-label">OBSERVATORY</text>
+                        </svg>
+                    </div>
+                    
+                    <!-- DOCKING MODULE to left of CORE -->
+                    <div class="module-outline docking-outline" data-position="4">
+                        <svg viewBox="0 0 100 100" class="module-svg outline">
+                            <rect x="20" y="35" width="60" height="30" stroke-dasharray="5,5" class="module-shape" rx="5" />
+                            <rect x="5" y="25" width="15" height="50" stroke-dasharray="5,5" class="module-shape" />
+                            <rect x="80" y="25" width="15" height="50" stroke-dasharray="5,5" class="module-shape" />
+                            <circle cx="10" cy="50" r="5" class="connector left" />
+                            <circle cx="90" cy="50" r="5" class="connector right" />
+                            <text x="50" y="55" class="module-label">DOCKING</text>
+                        </svg>
+                    </div>
+                    
+                    <!-- LAB MODULE below CORE -->
+                    <div class="module-outline lab-outline" data-position="5">
+                        <svg viewBox="0 0 100 100" class="module-svg outline">
+                            <rect x="25" y="10" width="50" height="80" stroke-dasharray="5,5" class="module-shape" rx="5" />
+                            <polygon points="25,10 75,10 80,25 20,25" stroke-dasharray="5,5" class="module-shape" />
+                            <circle cx="50" cy="10" r="5" class="connector top" />
+                            <circle cx="50" cy="90" r="5" class="connector bottom" />
+                            <text x="50" y="55" class="module-label">LAB</text>
+                        </svg>
+                    </div>
+                    
+                    <!-- ENGINE MODULE at far right -->
+                    <div class="module-outline engine-outline" data-position="6">
+                        <svg viewBox="0 0 100 100" class="module-svg outline">
+                            <rect x="10" y="25" width="60" height="50" stroke-dasharray="5,5" class="module-shape" rx="5" />
+                            <polygon points="70,25 90,40 90,60 70,75" stroke-dasharray="5,5" class="module-shape" />
+                            <circle cx="10" cy="50" r="5" class="connector left" />
+                            <text x="40" y="55" class="module-label">ENGINE</text>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Pieces container - where the draggable modules will be -->
+                <div id="puzzle-pieces">
+                    <!-- Modules will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Success message (hidden initially) -->
+        <div id="success-message" class="success-message panel">
+            <div class="success-glow"></div>
+            <h2>Space Station Assembled!</h2>
+            <p>Great job, Commander. Your station is now operational and ready for the next 37 missions.</p>
+            <button id="next-puzzle-btn" class="button holographic"><span>NEXT MISSION</span></button>
+        </div>
+        
+        <!-- Hint modal (hidden initially) -->
+        <div id="hint-modal" class="hint-modal">
+            <div class="hint-content panel">
+                <h3>Mission Hint</h3>
+                <p>Each module has unique connection points that match specific positions in the station blueprint. Build around the CORE module, positioning other modules to create a functional space station.</p>
+                <div class="hint-image">
+                    <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" class="hint-svg">
+                        <!-- Central Core with connections to other modules -->
+                        <g transform="translate(150, 100)">
+                            <rect x="-30" y="-30" width="60" height="60" fill="var(--primary)" rx="5" opacity="0.8" />
+                            <text x="0" y="5" fill="white" text-anchor="middle" font-size="12">CORE</text>
+                            
+                            <!-- Connector lines to other modules -->
+                            <line x1="0" y1="-30" x2="0" y2="-60" stroke="var(--secondary)" stroke-width="2" />
+                            <line x1="30" y1="0" x2="100" y2="0" stroke="var(--secondary)" stroke-width="2" />
+                            <line x1="0" y1="30" x2="0" y2="60" stroke="var(--secondary)" stroke-width="2" />
+                            <line x1="-30" y1="0" x2="-100" y2="0" stroke="var(--secondary)" stroke-width="2" />
+                            
+                            <!-- Connection points -->
+                            <circle cx="0" cy="-30" r="5" fill="white" />
+                            <circle cx="30" cy="0" r="5" fill="white" />
+                            <circle cx="0" cy="30" r="5" fill="white" />
+                            <circle cx="-30" cy="0" r="5" fill="white" />
+                        </g>
+                        
+                        <!-- Habitat Module -->
+                        <g transform="translate(150, 35)">
+                            <rect x="-25" y="-15" width="50" height="30" fill="var(--secondary)" rx="3" opacity="0.8" />
+                            <text x="0" y="5" fill="white" text-anchor="middle" font-size="10">HABITAT</text>
+                            <circle cx="0" cy="15" r="5" fill="white" />
+                        </g>
+                        
+                        <!-- Observatory Module -->
+                        <g transform="translate(265, 100)">
+                            <circle cx="0" cy="0" r="25" fill="var(--accent)" opacity="0.8" />
+                            <text x="0" y="5" fill="white" text-anchor="middle" font-size="9">OBSERVATORY</text>
+                            <circle cx="-25" cy="0" r="5" fill="white" />
+                        </g>
+                        
+                        <!-- Docking Module -->
+                        <g transform="translate(35, 100)">
+                            <rect x="-25" y="-15" width="50" height="30" fill="var(--warning)" rx="3" opacity="0.8" />
+                            <text x="0" y="5" fill="white" text-anchor="middle" font-size="9">DOCKING</text>
+                            <circle cx="25" cy="0" r="5" fill="white" />
+                        </g>
+                        
+                        <!-- Lab Module -->
+                        <g transform="translate(150, 165)">
+                            <rect x="-20" y="-30" width="40" height="60" fill="rgb(0, 200, 100)" rx="3" opacity="0.8" />
+                            <text x="0" y="5" fill="white" text-anchor="middle" font-size="10">LAB</text>
+                            <circle cx="0" cy="-30" r="5" fill="white" />
+                        </g>
+                        
+                        <!-- Engine Module -->
+                        <g transform="translate(350, 100)">
+                            <rect x="-35" y="-20" width="50" height="40" fill="rgb(255, 60, 60)" rx="3" opacity="0.8" />
+                            <polygon points="15,-20 35,0 15,20" fill="rgb(255, 60, 60)" opacity="0.8" />
+                            <text x="-10" y="5" fill="white" text-anchor="middle" font-size="10">ENGINE</text>
+                            <circle cx="-35" cy="0" r="5" fill="white" />
+                        </g>
+                    </svg>
+                </div>
+                <button id="close-hint-btn" class="button">CONTINUE MISSION</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="puzzle-footer">
+        <div class="container">
+            <p>Puzzle 1 of 38 • Nick's Cosmic Challenge</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

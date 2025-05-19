@@ -1,0 +1,662 @@
+/* Import theme */
+@import '../../css/theme.css';
+
+/* Puzzle-specific styles */
+.puzzle-header {
+    padding: var(--spacing-md) 0;
+    border-bottom: var(--border-thin);
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.puzzle-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.puzzle-nav {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.puzzle-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+.puzzle-instructions {
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    padding: var(--spacing-md);
+    background-color: rgba(0, 127, 255, 0.05);
+    border-color: var(--secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.puzzle-instructions:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/png;base64,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');
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.puzzle-game {
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--background-dark);
+    border: var(--border-medium);
+    padding: 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* Space environment effects */
+.space-environment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.nebula-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(15, 30, 60, 0.4) 0%, rgba(0, 10, 30, 0.2) 100%);
+    opacity: 0.5;
+}
+
+.stars-distant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    opacity: 0.5;
+}
+
+.floating-debris {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(1px 1px at 90px 40px, rgba(100, 200, 255, 0.5), rgba(100, 200, 255, 0)),
+        radial-gradient(1px 1px at 150px 95px, rgba(100, 200, 255, 0.5), rgba(100, 200, 255, 0)),
+        radial-gradient(1px 1px at 210px 165px, rgba(100, 200, 255, 0.5), rgba(100, 200, 255, 0));
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    animation: debris-drift 60s linear infinite;
+    opacity: 0.3;
+}
+
+@keyframes debris-drift {
+    from { background-position: 0 0; }
+    to { background-position: 300px 300px; }
+}
+
+#puzzle-board {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Enhanced blueprint grid */
+.blueprint-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.blueprint-grid svg {
+    filter: drop-shadow(0 0 3px var(--primary-glow));
+}
+
+/* Completely redesigned target area with natural space station layout */
+#puzzle-target {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Module outlines positioned individually for logical layout */
+.module-outline {
+    position: absolute;
+    border: 1px dashed var(--secondary);
+    border-radius: var(--border-radius-sm);
+    background-color: rgba(0, 207, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px rgba(0, 207, 255, 0.1);
+    transition: all 0.5s ease;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+/* Core module in center */
+.core-outline {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+/* Habitat module above core */
+.habitat-outline {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* Observatory module to right of core */
+.observatory-outline {
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* Docking module to left of core */
+.docking-outline {
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+/* Lab module below core */
+.lab-outline {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* Engine module at far right */
+.engine-outline {
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.module-svg {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.module-svg.outline .module-shape {
+    fill: none;
+    stroke: var(--secondary);
+    stroke-width: 1;
+}
+
+/* Enhanced connector visualization */
+.module-svg .connector {
+    fill: var(--primary-glow);
+    stroke: var(--primary);
+    stroke-width: 1;
+    filter: drop-shadow(0 0 3px var(--primary));
+    transition: all 0.3s ease;
+}
+
+.module-svg .module-label {
+    fill: var(--text-disabled);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    opacity: 0.7;
+}
+
+#puzzle-pieces {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* Module glow effects */
+.puzzle-piece {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    cursor: grab;
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    filter: drop-shadow(0 0 5px currentColor);
+}
+
+.puzzle-piece:active {
+    cursor: grabbing;
+}
+
+/* Enhanced module shapes */
+.puzzle-piece .module-svg:not(.outline) .module-shape {
+    fill: currentColor;
+    stroke: rgba(255, 255, 255, 0.7);
+    stroke-width: 1.5;
+    filter: drop-shadow(0 0 4px currentColor);
+}
+
+.puzzle-piece .module-svg .connector {
+    fill: white;
+    stroke: rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 0 4px white);
+    animation: pulse-connector 2s infinite ease-in-out;
+}
+
+@keyframes pulse-connector {
+    0% { filter: drop-shadow(0 0 3px white); }
+    50% { filter: drop-shadow(0 0 6px white); }
+    100% { filter: drop-shadow(0 0 3px white); }
+}
+
+.puzzle-piece .module-svg .module-label {
+    fill: var(--text-bright);
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Enhanced hover effects */
+.puzzle-piece:hover:not(.correct-position) {
+    z-index: 100;
+    transform: scale(1.08) translateY(-5px);
+    box-shadow: 0 0 20px currentColor, 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for each module type with texture gradients */
+.puzzle-piece.core-module {
+    color: var(--primary);
+    background: linear-gradient(135deg, rgba(0, 127, 255, 0.2), rgba(0, 127, 255, 0));
+}
+
+.puzzle-piece.habitat-module {
+    color: var(--secondary);
+    background: linear-gradient(135deg, rgba(0, 207, 255, 0.2), rgba(0, 207, 255, 0));
+}
+
+.puzzle-piece.observatory-module {
+    color: var(--accent);
+    background: linear-gradient(135deg, rgba(217, 0, 255, 0.2), rgba(217, 0, 255, 0));
+}
+
+.puzzle-piece.docking-module {
+    color: var(--warning);
+    background: linear-gradient(135deg, rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0));
+}
+
+.puzzle-piece.lab-module {
+    color: rgb(0, 200, 100);
+    background: linear-gradient(135deg, rgba(0, 200, 100, 0.2), rgba(0, 200, 100, 0));
+}
+
+.puzzle-piece.engine-module {
+    color: rgb(255, 60, 60);
+    background: linear-gradient(135deg, rgba(255, 60, 60, 0.2), rgba(255, 60, 60, 0));
+}
+
+/* Ensure correctly placed modules stay in place and are visible */
+.puzzle-piece.correct-position {
+    cursor: default !important;
+    pointer-events: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 5 !important;
+    animation: correct-placement 0.6s ease forwards, pulse-success 3s 0.6s infinite ease-in-out;
+}
+
+@keyframes correct-placement {
+    0% { filter: brightness(1) drop-shadow(0 0 5px currentColor); }
+    50% { filter: brightness(1.5) drop-shadow(0 0 15px var(--success)); }
+    100% { filter: brightness(1.2) drop-shadow(0 0 8px var(--success)); }
+}
+
+@keyframes pulse-success {
+    0% { filter: brightness(1.1) drop-shadow(0 0 8px var(--success)); }
+    50% { filter: brightness(1.3) drop-shadow(0 0 15px var(--success)); }
+    100% { filter: brightness(1.1) drop-shadow(0 0 8px var(--success)); }
+}
+
+/* Module inside outline specific styles */
+.module-outline .puzzle-piece {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Enhanced connection lines */
+.connection-line {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(0,207,255,0.7) 100%);
+    pointer-events: none;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    height: 60px !important;
+    width: 3px !important;
+    box-shadow: 0 0 8px var(--primary-glow);
+}
+
+.puzzle-piece.dragging .connection-line {
+    opacity: 0.9;
+    animation: connection-pulse 1s infinite ease-in-out;
+}
+
+@keyframes connection-pulse {
+    0% { box-shadow: 0 0 5px var(--primary-glow); }
+    50% { box-shadow: 0 0 12px var(--primary); }
+    100% { box-shadow: 0 0 5px var(--primary-glow); }
+}
+
+/* Module glow effect when near correct position */
+.puzzle-piece.near-position {
+    box-shadow: 0 0 30px var(--warning) !important;
+}
+
+/* Improved success message */
+.success-message {
+    display: none;
+    text-align: center;
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    border: var(--border-medium);
+    border-color: var(--success);
+    background: linear-gradient(135deg, 
+                 rgba(0, 255, 141, 0.1) 0%, 
+                 rgba(0, 200, 100, 0.2) 100%);
+    box-shadow: 0 0 30px var(--success);
+    animation: success-glow 3s infinite alternate ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.success-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(0, 255, 141, 0.4) 0%, rgba(0, 255, 141, 0) 70%);
+    animation: rotate-glow 10s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes rotate-glow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes success-glow {
+    0% { box-shadow: 0 0 20px var(--success); }
+    100% { box-shadow: 0 0 40px var(--success); }
+}
+
+.success-message h2 {
+    text-shadow: 0 0 10px var(--success);
+    animation: text-pulse 2s infinite alternate ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.success-message p {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes text-pulse {
+    0% { text-shadow: 0 0 10px var(--success); }
+    100% { text-shadow: 0 0 20px var(--success), 0 0 30px var(--success-glow); }
+}
+
+/* Enhanced button styles */
+.button.holographic {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border: none;
+    box-shadow: 0 0 15px var(--primary-glow);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.button.holographic:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(45deg);
+    animation: holographic-sweep 3s infinite linear;
+    z-index: 1;
+}
+
+.button.holographic span {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes holographic-sweep {
+    0% { transform: rotate(45deg) translateY(-100%); }
+    100% { transform: rotate(45deg) translateY(100%); }
+}
+
+.button.holographic:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 25px var(--secondary-glow);
+}
+
+.puzzle-footer {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    border-top: var(--border-thin);
+    color: var(--text-secondary);
+}
+
+/* Hint modal styles */
+.hint-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.hint-content {
+    width: 90%;
+    max-width: 500px;
+    padding: var(--spacing-lg);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hint-content:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/png;base64,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');
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.hint-image {
+    margin: var(--spacing-md) 0;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hint-svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hint-module {
+    fill: var(--primary);
+    opacity: 0.8;
+}
+
+/* Touch-friendly adjustments */
+.puzzle-piece {
+    /* Increase touch target size */
+    min-width: 100px;
+    min-height: 100px;
+    
+    /* Disable touch callout (long press menu) */
+    -webkit-touch-callout: none;
+    
+    /* Disable selection */
+    -webkit-user-select: none;
+    user-select: none;
+    
+    /* Disable text highlighting */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Visual feedback when dragging */
+.puzzle-piece.dragging {
+    opacity: 0.8;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px currentColor;
+}
+
+/* Larger buttons for touch */
+.button {
+    min-width: 100px;
+    min-height: 44px; /* Minimum recommended touch target size */
+    padding: 12px 20px;
+}
+
+/* Add visible active state for touch feedback */
+.button:active {
+    transform: scale(0.95);
+    background-color: var(--secondary);
+}
+
+/* Media query for touch devices */
+@media (pointer: coarse) {
+    .hint-modal .hint-content {
+        width: 95%; /* Fuller width on mobile */
+        max-width: 95%;
+    }
+    
+    /* Increase spacing for touch */
+    .puzzle-nav {
+        gap: var(--spacing-md);
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .puzzle-title {
+        font-size: 1.2rem;
+    }
+    
+    .puzzle-container {
+        padding: var(--spacing-md);
+    }
+    
+    .puzzle-piece {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .module-outline {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .puzzle-header .container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .puzzle-title {
+        font-size: 1rem;
+    }
+    
+    .puzzle-nav {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .puzzle-piece {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .module-outline {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Prevent pull-to-refresh on mobile */
+body {
+    overscroll-behavior-y: contain;
+}

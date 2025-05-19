@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick's Big Day - 38 Puzzles Await</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="theme-dark">
+    <!-- Intro Sequence -->
+    <div id="intro-sequence" class="intro-sequence">
+        <div class="starfield-container">
+            <div id="starfield"></div>
+        </div>
+        
+        <div class="console-container">
+            <div class="console-screen">
+                <div class="console-text" id="console-text"></div>
+                <div class="console-cursor"></div>
+            </div>
+        </div>
+        
+        <div class="hologram-container">
+            <div class="hologram-ring"></div>
+            <div class="hologram-projection"></div>
+        </div>
+        
+        <div class="iris-door">
+            <div class="iris-segment" id="iris1"></div>
+            <div class="iris-segment" id="iris2"></div>
+            <div class="iris-segment" id="iris3"></div>
+            <div class="iris-segment" id="iris4"></div>
+            <div class="iris-segment" id="iris5"></div>
+            <div class="iris-segment" id="iris6"></div>
+        </div>
+    </div>
+
+    <!-- Main Content (initially hidden) -->
+    <div id="main-content" style="opacity: 0">
+        <div class="stars-container">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+
+        <header class="main-header flex-center">
+            <div class="container">
+                <h1 class="text-glow">NICK'S COSMIC CHALLENGE</h1>
+                <p class="tagline">38 Puzzles Await • <span class="puzzle-counter">0</span> Completed</p>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="intro-panel panel">
+                <h2>Welcome, Commander</h2>
+                <p>Your mission contains 38 challenges across the galaxy. Complete them all to unlock the final reward.</p>
+                <p>Each puzzle will test a different skill. Navigate wisely.</p>
+                <div class="button-container">
+                    <button id="start-mission" class="button holographic">BEGIN MISSION</button>
+                </div>
+            </section>
+
+            <section class="puzzle-grid" id="puzzle-grid">
+                <!-- Puzzle blocks will be generated here via JavaScript -->
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <p>Created with cosmic energy for Nick's 38th Birthday</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/intro-sequence.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

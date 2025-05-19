@@ -1,0 +1,226 @@
+:root {
+  /* Core color palette - Eve Online inspired */
+  --background-dark: #0a0e14;
+  --background-medium: #121822;
+  --background-light: #1e2736;
+  
+  --primary: #007fff;
+  --primary-glow: rgba(0, 127, 255, 0.5);
+  --secondary: #00cfff;
+  --secondary-glow: rgba(0, 207, 255, 0.5);
+  --accent: #d900ff;
+  --accent-glow: rgba(217, 0, 255, 0.5);
+  
+  --warning: #ff9900;
+  --error: #ff3e3e;
+  --success: #00ff8d;
+  
+  --text-bright: #ffffff;
+  --text-primary: #e0e7ff;
+  --text-secondary: #a0a7c0;
+  --text-disabled: #636b7f;
+  
+  /* Borders and lines */
+  --border-thin: 1px solid rgba(0, 127, 255, 0.3);
+  --border-medium: 2px solid rgba(0, 207, 255, 0.4);
+  --border-thick: 3px solid rgba(0, 207, 255, 0.6);
+  --border-glow: 0 0 10px var(--primary-glow);
+  --border-radius-sm: 3px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 12px;
+  
+  /* Typography */
+  --font-main: 'Rajdhani', 'Orbitron', sans-serif; /* Sci-fi feel */
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+  
+  /* Effects */
+  --shadow-sm: 0 2px 8px rgba(0, 127, 255, 0.15);
+  --shadow-md: 0 4px 12px rgba(0, 127, 255, 0.25);
+  --shadow-lg: 0 8px 24px rgba(0, 127, 255, 0.35);
+  --glow-effect: 0 0 15px var(--primary-glow);
+  --hover-glow: 0 0 20px var(--secondary-glow);
+  
+  /* Animation */
+  --transition-fast: 150ms ease;
+  --transition-medium: 300ms ease;
+  --transition-slow: 500ms ease;
+  
+  /* Z-index layers */
+  --z-base: 1;
+  --z-overlay: 10;
+  --z-modal: 100;
+  --z-tooltip: 1000;
+}
+
+/* Dark theme is default - inspired by Eve Online */
+.theme-dark {
+  --bg-primary: var(--background-dark);
+  --bg-secondary: var(--background-medium);
+  --bg-tertiary: var(--background-light);
+  --text-color: var(--text-primary);
+  --heading-color: var(--text-bright);
+}
+
+/* Light theme alternative */
+.theme-light {
+  --bg-primary: #e0e7ff;
+  --bg-secondary: #c5d1f5;
+  --bg-tertiary: #a0b3e9;
+  --text-color: #1e2736;
+  --heading-color: #0a0e14;
+  /* The accent colors remain the same for brand consistency */
+}
+
+/* Utility classes */
+.text-glow {
+  text-shadow: 0 0 8px var(--primary-glow);
+}
+
+.border-glow {
+  box-shadow: var(--border-glow);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+/* Futuristic UI elements */
+.panel {
+  background-color: var(--bg-secondary);
+  border: var(--border-thin);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.button {
+  background-color: var(--primary);
+  color: var(--text-bright);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--font-main);
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+  box-shadow: var(--hover-glow);
+}
+
+.button-outline {
+  background-color: transparent;
+  border: var(--border-thin);
+  color: var(--primary);
+}
+
+.button-outline:hover {
+  background-color: rgba(0, 127, 255, 0.1);
+}
+
+/* Holographic display effect for special elements */
+.holographic {
+  position: relative;
+  overflow: hidden;
+}
+
+.holographic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: holographic-sweep 3s infinite;
+}
+
+@keyframes holographic-sweep {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* Puzzle numbers styling */
+.puzzle-number {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxl);
+  color: var(--primary);
+  text-shadow: var(--glow-effect);
+}
+
+/* Basic reset and global styles */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  margin-top: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--secondary);
+  text-shadow: var(--glow-effect);
+}
